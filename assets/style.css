@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css?family=Comfortaa&display=swap');
+body{
+    font-family: 'Comfortaa', cursive;
+}
+
+#myImage{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 2px solid goldenrod;
+    margin: 20px;
+    overflow: hidden;
+}
+#hi{
+    font-size: 50px;
+}
+#aboutMe{
+    width: 85%;
+}
+
+
+.img{
+    width: 300px;
+    height: 300px;
+}
+.list{
+    width: 80%;
+}
+
+.period{
+    color: gray;
+}
+
+.job{
+    margin-left: 40px;
+    border: 0;
+    border-radius: 10px;
+    width: 85%;
+}
+
+.jCenter{
+    margin: 20px auto;
+    padding: 25px;
+}
+
+.list li{
+    margin: 25px;
+}
+
+.socials{
+    margin: 7px;
+}
+
+.footer{
+    text-align: center;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    height: 45px;
+}
+.footer span{
+    font-size: 12px;
+    display: block;
+    position: absolute;
+    bottom: 10px;
+    position: absolute;
+    width: 90%;
+    left: 50%;
+    top: 45%;
+    bottom: auto;
+    right: auto;
+    transform: translateX(-50%) translateY(-50%);
+    text-align: center;
+}
+.footer a{
+    color: #000000;
+    text-decoration: none;
+}
+.fa{
+    color: #E90606;
+    margin: 0 3px;
+    font-size: 10px;
+    animation: pound .35s infinite alternate;
+}
+
+@keyframes pound{
+  to{transform: scale(1.1)}
+}
+
+
+
+@media screen and (max-width: 720px){
+     .title{
+    font-size: 30px !important;
+} 
+p, li{
+    font-size: 0.8em;
+}
+
+#myImage{
+    width: 150px;
+    height: 150px;
+
+}
+
+.img{
+    width: 150px;
+    height: 143px;
+}
+}

@@ -1,0 +1,16 @@
+{
+    "firstName": "Nonso",
+    "lastName": "Oranye",
+    "middleName": "Chuka",
+    "nickNames": ["nonix", "x-axis","C-sharp","nocdegenius","orange"],
+    "birthday": "29-9-1995",
+    "currentLocation": "Awka, Anambra State",
+    "HomeTown": "Onitsha, Anambra State",
+    "Education": ["Nnamdi Azikiwe University, Awka","Electronics and Computer Engineering","3.54"],
+    "placesIHaveBeen": ["Lagos","port harcourt","Imo"],
+    "hobbies": ["reading","watching Tv Shows","tinkering with codes"],
+    "greatestAchievement": "Getting to build this portfolio website finally.",
+    "greatestLoss": "Leaving my not so cool job (NYSC ppa) to go for Genesys Internship which I never got into.",
+    "skills":["Programming with C#", "Desktop application development","Development of reusable class library in C#","Development of responsives websites and web apps using html, css, Js and BootStrap","Programming basic Python console applications","Development using Nodejs","Working with mongodb in collaboration with nodejs"]
+
+}
