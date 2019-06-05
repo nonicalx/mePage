@@ -7,7 +7,7 @@ body{
     width: 200px;
     height: 200px;
     border-radius: 50%;
-    border: 2px solid goldenrod;
+    border: 2px solid rgb(123, 228, 123);
     margin: 20px;
     overflow: hidden;
 }
@@ -50,9 +50,20 @@ body{
 a{
     text-decoration: none !important;
 }
+#extra{
+    background-color: #fefefefe
+}
 
 .socials{
     margin: 7px;
+}
+.more{
+    width: 100px !important;
+    height: 100px !important;
+    border-radius: 50% !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .footer{
@@ -109,5 +120,15 @@ p, li{
 .img{
     width: 150px;
     height: 143px;
+}
+#hi{
+    font-size: 30px;
+}
+
+.more{
+    margin-top: 10px;
+    width: 80px !important;
+    height: 80px !important;
+    font-size: 12px !important;    
 }
 }
