@@ -4,8 +4,8 @@ body{
 }
 
 #myImage{
-    width: 300px;
-    height: 300px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
     border: 2px solid goldenrod;
     margin: 20px;
@@ -20,8 +20,8 @@ body{
 
 
 .img{
-    width: 300px;
-    height: 300px;
+    width: 200px;
+    height: 200px;
 }
 .list{
     width: 80%;
@@ -45,6 +45,10 @@ body{
 
 .list li{
     margin: 25px;
+}
+
+a{
+    text-decoration: none !important;
 }
 
 .socials{
