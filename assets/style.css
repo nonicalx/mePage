@@ -51,7 +51,7 @@ a{
     text-decoration: none !important;
 }
 #extra{
-    background-color: #fefefefe
+    background-color: #fefefefe;
 }
 
 .socials{
@@ -64,6 +64,12 @@ a{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.subtitles{
+    width: 30%;
+    text-align: center;
+    background-color: rgb(123, 228, 123);
 }
 
 .footer{
