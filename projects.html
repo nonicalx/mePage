@@ -21,107 +21,13 @@
     <title>My Projects</title>
 </head>
 
-<body>
+<body onload="loadProjects()">
     <div class="container-fluid">
         <div class="subtitles">
             <h2 class="my-4">Projects</h2>
         </div>
 
-        <main class="row">
-            <div class="col-md-3 mb-4">
-                <section class="project-card shadow-sm">
-                    <div>
-                        <img src="/assets/images/CSharp.png" class="project-img" />
-                    </div>
-                    <div class="py-2 px-2 project-txt">
-                        <div class="project-desc">
-                            <h5>BMI Calculator</h5>
-                            <p>A very simple bmi calculator, using for calculating body mass index.</p>
-                        </div>
-
-                        <div class="d-flex project-footer">
-                            <p class="project-stack"><b>C#, windows form</b></p>
-                            <div class="d-flex justify-content-end project-view-btn">
-                                <button class="btn btn-sm btn-outline-success"
-                                    onclick="openProject('https://github.com/nonicalx/bmi-calculator')">view</button>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-            </div>
-
-
-
-            <div class="col-md-3 mb-4">
-                <section class="project-card shadow-sm">
-                    <div>
-                        <img src="/assets/images/reactLogo.png" class="project-img" />
-                    </div>
-                    <div class="py-2 px-2 project-txt">
-                        <div class="project-desc">
-                            <h5>React Selective</h5>
-                            <p>A simple react app that allow multiple selection from dropdown, allows
-                                searching from any end-point & allow removal of perviously selected value.</p>
-                        </div>
-
-                        <div class="d-flex project-footer">
-                            <p class="project-stack"><b>React</b></p>
-                            <div class="d-flex justify-content-end project-view-btn">
-                                <button class="btn btn-sm btn-outline-success"
-                                    onclick="openProject('https://github.com/nonicalx/React-Selective')">view</button>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-            </div>
-
-
-            <div class="col-md-3 mb-4">
-                <section class="project-card shadow-sm">
-                    <div>
-                        <img src="/assets/images/CSharp.png" class="project-img" />
-                    </div>
-                    <div class="py-2 px-2 project-txt">
-                        <div class="project-desc">
-                            <h5>Simple Text Encryption</h5>
-                            <p>A desktop application for encrypting text in text files.</p>
-                        </div>
-
-                        <div class="d-flex project-footer">
-                            <p class="project-stack"><b>C#, windows form</b></p>
-                            <div class="d-flex justify-content-end project-view-btn">
-                                <button class="btn btn-sm btn-outline-success"
-                                    onclick="openProject('https://github.com/nonicalx/SimpleTextEncrytor')">view</button>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-            </div>
-
-
-
-            <div class="col-md-3 mb-4">
-                <section class="project-card shadow-sm">
-                    <div>
-                        <img src="/assets/images/flutter.png" class="project-img" />
-                    </div>
-                    <div class="py-2 px-2 project-txt">
-                        <div class="project-desc">
-                            <h5>Destini App</h5>
-                            <p>A mobile game that is about about the choices you make along you path based on a story.
-                            </p>
-                        </div>
-
-                        <div class="d-flex project-footer">
-                            <p class="project-stack"><b>dart, flutter</b></p>
-                            <div class="d-flex justify-content-end project-view-btn">
-                                <button class="btn btn-sm btn-outline-success"
-                                    onclick="openProject('https://github.com/nonicalx/destini-flutter')">view</button>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-            </div>
+        <main class="row" id="project-row">
 
         </main>
     </div>

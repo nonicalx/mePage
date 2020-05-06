@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Comfortaa&display=swap");
 body {
   font-family: "Comfortaa", cursive;
+  /* background-color: black;
+  color: white; */
 }
 
 ::-webkit-scrollbar {
@@ -50,6 +52,8 @@ body {
   border: 0;
   border-radius: 10px;
   width: 85%;
+  background-color: white;
+  color: black;
 }
 
 .jCenter {
