@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -21,8 +22,16 @@
     <title>Oranye Nonso</title>
 </head>
 
-<body>
-    <nav class="navbar navbar-expand-sm navbar-light bg-light">
+<body class="body" id="body">
+    <nav class="navbar navbar-expand-sm" id="navigator">
+        <div class="form-inline">
+            <i class="material-icons yellow_sun mr-1">wb_sunny</i>
+            <label class="switch">
+                <input type="checkbox" onclick="switchTheme()">
+                <span class="slider round"></span>
+            </label>
+            <i class="material-icons dark_moon ml-1">brightness_3</i>
+        </div>
         <a class="nav-item nav-link active" href="#" style="color: rgb(123, 228, 123)">Oranye Nonso</a>
         <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
             aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
@@ -31,28 +40,29 @@
         <div class="collapse navbar-collapse" id="collapsibleNavId">
             <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                 <li class="nav-item">
-                    <a class="nav-item nav-link" href="#aboutMe">About the dude</a>
+                    <a class="nav-item nav-link linked_up" href="#aboutMe">About the dude</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-item nav-link" href="#skills">What I Can Do</a>
+                    <a class="nav-item nav-link linked_up" href="#skills">What I Can Do</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-item nav-link" href="#Eee">Exp</a>
+                    <a class="nav-item nav-link linked_up" href="#Eee">Exp</a>
                 </li>
 
             </ul>
             <form class="form-inline my-2 my-lg-0">
-                <a href="https://twitter.com/OranyeNonso" class="socials" target="_blank"><span><img
-                            src="https://img.icons8.com/metro/26/000000/twitter.png" alt="TW"></span></a>
-                <a href="https://medium.com/@nonicalx" class="socials" target="_blank"><span><img
-                            src="https://img.icons8.com/ios/26/000000/medium-logo-filled.png" alt="Medium"></span></a>
-                <a href="https://github.com/nonicalx" class="socials" target="_blank"><span><img
-                            src="https://img.icons8.com/metro/26/000000/github.png" alt="Github"></span></a>
+                <a href="https://twitter.com/OranyeNonso" class="socials" target="_blank"><span><i
+                            class="fa fa-twitter"></i></span></a>
+                <a href="https://medium.com/@nonicalx" class="socials" target="_blank"><span><i
+                            class="fa fa-medium"></i></span></a>
+                <a href="https://github.com/nonicalx" class="socials" target="_blank"><span><i
+                            class="fa fa-github"></i></span></a>
             </form>
+
         </div>
     </nav>
     <div class="container-fluid">
-        <div class="row">
+        <div class="row pt-5 mt-3">
 
             <div class="col-md-4 d-flex align-items-center justify-content-center">
                 <div id="myImage">
@@ -104,7 +114,7 @@
             </div>
 
         </div>
-        <div class="row" id="extra" style="padding: 20px">
+        <!-- <div class="row" id="extra" style="padding: 20px">
             <div class="col-4 d-flex align-items-center justify-content-center">
                 <a name="" id="" class="btn btn-outline-success more" href="./projects.html" role="button">Projects</a>
             </div>
@@ -116,7 +126,7 @@
                 <a name="" id="" class="btn btn-outline-success more" href="./projects.html" role="button">Favorite Tv
                     Shows</a>
             </div>
-        </div>
+        </div> -->
 
         <div class="row">
 
@@ -124,7 +134,7 @@
                 <h3 class="text-center display-4 my-4 title" id="Eee">Experience</h3>
                 <hr>
 
-                <div class="job mt-2 shadow jCenter">
+                <div class="job mt-2 card_shadow jCenter">
                     <p><strong>Full-Stack Developer</strong>,Genesys tech Hub<span><small class="period"> [June 2019 -
                                 present, <small id="count">11</small> months]</small></span></p>
                     <p><strong>Location:</strong> Centenary City, Enugu State</p>
@@ -136,7 +146,7 @@
                     </ul>
                 </div>
 
-                <div class="job mt-2 shadow jCenter">
+                <div class="job mt-2 card_shadow jCenter">
                     <p><strong>Frontend Developer</strong>,Hng Internship Program<span><small class="period"> [April
                                 2019 - May 2019, 1 month]</small></span></p>
                     <p><strong>Location:</strong> Remote</p>
@@ -148,7 +158,7 @@
                     </ul>
                 </div>
 
-                <div class="job mt-2 shadow jCenter">
+                <div class="job mt-2 card_shadow jCenter">
                     <p><strong>IT Executive</strong>,Crestsage Limited<span><small class="period"> [May 2018 - May 2019,
                                 1 year]</small></span></p>
                     <p><strong>Location:</strong> Lekki Phase 1, Lagos State</p>
@@ -161,7 +171,7 @@
                     </ul>
                 </div>
 
-                <div class="job mt-2 shadow jCenter">
+                <div class="job mt-2 card_shadow jCenter">
                     <p><strong>Itern</strong>,Electronics Development Institute<span><small class="period"> [May 2016 -
                                 October 2016, 6 months]</small></span></p>
                     <p><strong>Location:</strong> Abba, Anambra State</p>

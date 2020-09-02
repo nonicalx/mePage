@@ -1,8 +1,19 @@
 @import url("https://fonts.googleapis.com/css?family=Comfortaa&display=swap");
-body {
+
+:root {
+  --txt-color: black;
+  --bg-color: white;
+}
+
+.body {
   font-family: "Comfortaa", cursive;
-  /* background-color: black;
-  color: white; */
+  background: white;
+  color: black;
+}
+
+.dark_body {
+  color: white !important;
+  background: black !important;
 }
 
 ::-webkit-scrollbar {
@@ -52,8 +63,15 @@ body {
   border: 0;
   border-radius: 10px;
   width: 85%;
-  background-color: white;
-  color: black;
+  /* background-color: white; */
+}
+
+#navigator {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 5000;
+  background: white;
 }
 
 .jCenter {
@@ -72,8 +90,19 @@ a {
   background-color: #fefefefe;
 }
 
+.card_shadow {
+  box-shadow: 0 10px 20px rgba(101, 221, 115, 0.5) !important;
+}
+
 .socials {
   margin: 7px;
+  font-size: 24px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.linked_up {
+  color: inherit;
 }
 .more {
   width: 100px !important;
@@ -110,10 +139,9 @@ a {
   text-align: center;
 }
 .footer a {
-  color: #000000;
   text-decoration: none;
 }
-.fa {
+.footer .fa {
   color: #e90606;
   margin: 0 3px;
   font-size: 10px;
@@ -159,6 +187,71 @@ a {
 .project-footer {
   padding-top: 0.2rem;
   height: 20%;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 48px;
+  height: 28px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #696969;
+}
+
+.yellow_sun {
+  color: yellow;
+  font-size: 20px;
+}
+
+.dark_moon {
+  transform: rotate(40deg);
+  font-size: 20px;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(20px);
+  -ms-transform: translateX(20px);
+  transform: translateX(20px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
 }
 
 @keyframes pound {

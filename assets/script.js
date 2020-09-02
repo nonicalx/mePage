@@ -69,7 +69,8 @@ function loadProjects() {
     var projectRow = document.getElementById('project-row');
 
     projects.forEach(project => {
-        projectRow.insertAdjacentHTML('beforeend', `<div class="col-md-3 mb-4 d-flex justify-content-center">
+        projectRow.insertAdjacentHTML('beforeend', 
+        `<div class="col-md-3 mb-4 d-flex justify-content-center">
         <section class="project-card shadow-sm">
             <div>
                 <img src=${project.img} class="project-img" />
@@ -94,4 +95,21 @@ function loadProjects() {
 
 
 
+}
+
+
+
+function switchTheme (){
+    let body = document.getElementById("body")
+    let nav = document.getElementById("navigator")
+
+    console.log(body.classList.contains("body"))
+
+    if(body.classList.contains("dark_body")){
+        body.classList.remove("dark_body")
+        nav.classList.remove("dark_body")
+    }else{
+        body.classList.add("dark_body");
+        nav.classList.add("dark_body");
+    }
 }
