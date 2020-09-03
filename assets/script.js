@@ -83,7 +83,7 @@ function loadProjects() {
     
                 <div class="d-flex project-footer">
                     <p class="project-stack"><b>${project.stack}</b></p>
-                    <div class="d-flex justify-content-end project-view-btn">
+                    <div class="d-flex justify-content-end align-items-center project-view-btn">
                         <a class="btn btn-sm btn-outline-success" 
                             href=${project.link} target="_blank">view</a>
                     </div>

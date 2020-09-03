@@ -74,6 +74,15 @@
   background: white;
 }
 
+.port_btn {
+  border-radius: 100px !important;
+  cursor: pointer;
+}
+
+.port_btn:hover {
+  color: white;
+}
+
 .jCenter {
   margin: 20px auto;
   padding: 25px;
