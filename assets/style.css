@@ -263,6 +263,10 @@ input:checked + .slider:before {
   border-radius: 50%;
 }
 
+.title{
+  font-family: 'Berkshire Swash', cursive !important;
+}
+
 @keyframes pound {
   to {
     transform: scale(1.1);
@@ -272,10 +276,12 @@ input:checked + .slider:before {
 @media screen and (max-width: 720px) {
   .title {
     font-size: 30px !important;
+    font-family: 'Berkshire Swash', cursive !important;
   }
   p,
   li {
     font-size: 0.8em;
+    text-align: center;
   }
 
   #myImage {
