@@ -303,4 +303,8 @@ input:checked + .slider:before {
     height: 80px !important;
     font-size: 12px !important;
   }
+
+  .list{
+    margin-bottom: 0;
+  }
 }
