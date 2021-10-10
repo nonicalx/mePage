@@ -24,13 +24,13 @@
         <h5><span class="n-logo">N</span>onso Oranye</h5>
         <ul class="nav-list">
           <li><a href="#about">About</a></li>
-          <li>Projects</li>
-          <li>Contact</li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
     </header>
     <main class="main">
-      <article id="about">
+      <article id="about" class="section-wrap">
         <h3 class="section-header">About</h3>
         <section class="about">
           <div>
@@ -114,8 +114,182 @@
           <!-- End of Flutter -->
         </section>
       </article>
+
+      <article id="projects" class="section-wrap">
+        <h3 class="section-header">Projects</h3>
+        <section class="project-grid">
+          <div
+            class="project"
+            style="
+              background: url('/assets/images/re.png');
+              background-position: center;
+              background-size: contain;
+              background-repeat: no-repeat;
+            "
+          >
+            <section>
+              <p>Resource Edge</p>
+              <a
+                href="https://resourceedge.netlify.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >open</a
+              >
+            </section>
+          </div>
+          <div
+            class="project"
+            style="
+              background: url('/assets/images/muon.png');
+              background-position: center;
+              background-size: cover;
+              background-repeat: no-repeat;
+            "
+          >
+            <section>
+              <p>Muon Club</p>
+              <a
+                href="https://beta.muon.club/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >open</a
+              >
+            </section>
+          </div>
+          <div
+            class="project"
+            style="
+              background: url('/assets/images/pace.png');
+              background-position: left;
+              background-size: cover;
+              background-repeat: no-repeat;
+            "
+          >
+            <section>
+              <p>Pace</p>
+              <a
+                href="https://staging-pacewebsite.herokuapp.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >open</a
+              >
+            </section>
+          </div>
+          <div
+            class="project"
+            style="
+              background: url('/assets/images/makinsight.png');
+              background-position: left;
+              background-size: cover;
+              background-repeat: no-repeat;
+            "
+          >
+            <section>
+              <p>Makinsight</p>
+              <a
+                href="https://makinsight.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >open</a
+              >
+            </section>
+          </div>
+          <div
+            class="project"
+            style="
+              background: url('/assets/images/biafra.png');
+              background-position: left;
+              background-size: cover;
+              background-repeat: no-repeat;
+            "
+          >
+            <section>
+              <p>Biafra Memories</p>
+              <a
+                href="http://www.biaframemories.org/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >open</a
+              >
+            </section>
+          </div>
+          <div
+            class="project"
+            style="
+              background: url('/assets/images/journalBox.png');
+              background-position: left;
+              background-size: cover;
+              background-repeat: no-repeat;
+            "
+          >
+            <section>
+              <p>Journal Box</p>
+              <a
+                href="https://journal-box.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >open</a
+              >
+            </section>
+          </div>
+        </section>
+      </article>
+
+      <article id="contact" class="section-wrap">
+        <h3 class="section-header">Contact</h3>
+
+        <section class="contact-card">
+          <form class="contact-form">
+            <input type="email" name="email" id="email" placeholder="Email" />
+
+            <input
+              type="text"
+              name="subject"
+              id="subject"
+              placeholder="Subject"
+            />
+
+            <textarea
+              name="content"
+              id="content"
+              cols="30"
+              rows="10"
+              placeholder="Your Message"
+            ></textarea>
+
+            <div style="text-align: center">
+              <button>Submit</button>
+            </div>
+          </form>
+        </section>
+      </article>
     </main>
-    <footer class="footer">+ + + +</footer>
+    <footer class="footer">
+      <div>
+        <a
+          href="https://twitter.com/OranyeNonso"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><img src="./assets/images/twitter.png" alt="twitter"
+        /></a>
+        <a
+          href="https://www.linkedin.com/in/nonso-oranye-8664ab121/"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><img src="./assets/images/linkedin.png" alt="linkedIn"
+        /></a>
+
+        <a
+          href="https://github.com/nonicalx"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src="./assets/images/github.png" alt="github" />
+        </a>
+      </div>
+      <p>+ + + +</p>
+      <span>&copy; Nonso Oranye</span>
+    </footer>
 
     <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <!-- stats.js lib -->
