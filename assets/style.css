@@ -243,9 +243,11 @@ canvas {
   margin: 0;
   flex-basis: 20%;
   font-family: "Poppins", sans-serif;
-  font-size: 20px;
+  font-size: 16px;
   border-bottom: 1px solid var(--black);
-  margin-top: -3px;
+  height: 28px;
+  display: flex;
+  align-items: center;
 }
 
 .project-grid {
@@ -345,7 +347,17 @@ canvas {
   transition: all 0.3s;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1238px) {
+  .project-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(auto, 300px));
+    column-gap: 20px;
+    row-gap: 20px;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 825px) {
   .project-grid {
     display: grid;
     grid-template-columns: repeat(2, minmax(auto, 300px));
@@ -361,6 +373,19 @@ canvas {
 
   .contact-card {
     width: 100%;
+  }
+
+  .about {
+    width: 100%;
+  }
+
+  .about-skill {
+    width: 100%;
+  }
+
+  .skill-name {
+    font-size: 16px;
+    margin-top: 0px;
   }
 }
 
@@ -390,5 +415,10 @@ canvas {
   .contact-form {
     width: 90%;
     margin: 0px auto;
+  }
+
+  .skill-name {
+    font-size: 10px;
+    margin-top: 0px;
   }
 }
