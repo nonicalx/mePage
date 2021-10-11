@@ -208,9 +208,34 @@ canvas {
 }
 
 .about-skill {
-  width: 68%;
+  width: 70%;
   margin: 0 auto;
   padding: 5% 0;
+}
+
+.about-skill ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  column-gap: 25px;
+  flex-wrap: wrap;
+}
+
+.about-skill h4 {
+  font-size: 24px;
+  font-family: Comfortaa;
+  margin-top: 0;
+}
+.about-skill li {
+  text-align: center;
+}
+
+.about-skill li > p {
+  margin: 0;
+  margin-top: 4px;
 }
 
 .skill-rating {
