@@ -101,6 +101,11 @@ canvas {
   margin: 0;
 }
 
+.remaining {
+  /* font-family: Comfortaa; */
+  font: inherit;
+}
+
 .nav-list {
   list-style: none;
   display: flex;
@@ -180,6 +185,7 @@ canvas {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 0 auto;
 }
 
 .about-text {
@@ -221,6 +227,7 @@ canvas {
   justify-content: center;
   list-style: none;
   column-gap: 25px;
+  row-gap: 25px;
   flex-wrap: wrap;
 }
 
@@ -335,7 +342,7 @@ canvas {
 .contact-card {
   box-shadow: 2px 4px 5px gray;
   width: 70%;
-  min-height: 350px;
+  min-height: 280px;
   margin: 0 auto;
   padding: 3% 5%;
   display: flex;
@@ -421,6 +428,20 @@ canvas {
   }
 }
 
+@media (max-width: 768px) {
+  .banner h2 {
+    font-size: 40px;
+  }
+
+  .banner p {
+    font-size: 26px;
+  }
+  .about-skill img {
+    width: 100px;
+    height: 100px;
+  }
+}
+
 @media (max-width: 660px) {
   .project-grid {
     grid-template-columns: repeat(1, minmax(auto, 300px));
@@ -434,9 +455,44 @@ canvas {
     width: 80%;
     margin: 0px auto;
   }
+  .about-text {
+    font-size: 14px;
+  }
 }
 
 @media (max-width: 500px) {
+  .about {
+    display: block;
+  }
+
+  .about-skill img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .about-skill li > p {
+    font-size: 13px;
+  }
+
+  .contact-card h4 {
+    font-size: 18px;
+  }
+
+  .contact-card p {
+    font-size: 14px;
+  }
+
+  .contact-card > div:last-child {
+    display: none;
+  }
+
+  .contact-card > div:first-child {
+    flex-basis: 100%;
+  }
+  .logo-container {
+    margin-bottom: 26px;
+  }
+
   .project-grid {
     grid-template-columns: 1fr;
   }
@@ -452,5 +508,27 @@ canvas {
   .skill-name {
     font-size: 10px;
     margin-top: 0px;
+  }
+
+  .banner h2 {
+    font-size: 40px;
+    display: block;
+  }
+
+  .remaining {
+    display: none;
+  }
+  .nav-list {
+    display: none;
+  }
+}
+
+@media (max-width: 335px) {
+  .banner h2 {
+    font-size: 36px;
+  }
+
+  .banner p {
+    font-size: 20px;
   }
 }
