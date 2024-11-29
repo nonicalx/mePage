@@ -7,10 +7,13 @@
 
 :root {
   --nav-height: 65px;
-  --bg: white;
+  --bg: #f2f0ef;
   --bar-height: 28px;
   --black: black;
   --white: white;
+  --large-laptop-width: 1440px;
+  --header-z-index: 10;
+  --footer-z-index: 11;
 }
 html {
   scroll-behavior: smooth;
@@ -19,6 +22,7 @@ body {
   padding: 0;
   margin: 0;
   font-family: Poppins;
+  background-color: var(--bg);
 }
 
 * {
@@ -33,13 +37,15 @@ body {
   top: 0;
   background-color: var(--bg);
   padding: 0 5%;
-  z-index: 10;
+  z-index: var(--header-z-index);
 }
 
 .main {
   min-height: calc(100vh - var(--nav-height));
   padding: 0 5%;
   padding-bottom: 3%;
+  max-width: var(--large-laptop-width);
+  margin: 0 auto;
 }
 
 .banner {
@@ -56,7 +62,7 @@ body {
 .banner h2,
 .banner p {
   margin: 0;
-  color: white;
+  color: var(--white);
   display: inline;
   font-family: "IBM Plex Mono", monospace;
 }
@@ -73,7 +79,6 @@ body {
 /* particle */
 canvas {
   display: block;
-  vertical-align: bottom;
 } /* ---- particles.js container ---- */
 #particles-js {
   width: 100%;
@@ -158,6 +163,9 @@ canvas {
   justify-content: space-between;
   background-color: rgba(243, 239, 239, 0.3);
   padding: 5px 2%;
+  position: sticky;
+  bottom: 0;
+  z-index: var(--footer-z-index);
 }
 
 .footer p {
@@ -165,16 +173,6 @@ canvas {
   font-size: 20px;
   text-shadow: -2px 1px rgb(160, 158, 158);
   margin: 0;
-}
-
-.footer div {
-  display: flex;
-  column-gap: 15px;
-  align-items: center;
-}
-
-.footer div a {
-  display: flex;
 }
 
 .logo-container {
@@ -293,11 +291,21 @@ canvas {
 .project {
   width: 390px;
   height: 350px;
-  background-color: var(--black);
   box-shadow: 2px 4px 5px gray;
   padding: 20px;
   position: relative;
   overflow: hidden;
+  background-position: left;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.project-bg-center {
+  background-position: center;
+}
+
+.project-bg-contain {
+  background-size: contain;
 }
 
 .project section {
